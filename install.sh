@@ -1,4 +1,3 @@
-#!bin/env bash
 echo "Hi."
 sleep 2
 
