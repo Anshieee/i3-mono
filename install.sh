@@ -39,6 +39,7 @@ if [ -f ~/.config/picom.conf ]; then
     cp config/picom.conf ~/.config/picom.conf
 else
     echo "picom conf installed"
+    mkdir -p ~/.config/picom
     cp config/picom.conf ~/.config/picom.conf
 fi
 
