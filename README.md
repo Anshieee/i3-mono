@@ -46,6 +46,24 @@ If you're here just to view them, here are the screenshots:
     <img src='https://github.com/Anshieee/stuff/raw/main/okokok.gif'>
 </p>
 
+
+
+<a id="install"></a>
+## Installation tutorial (only for arch-based distros as of now)
+heres the juice :)
+
+this thing makes backups of your stuff too btw
+
+Install git
+`pacman -Sy git`
+
+```sh
+git clone https://github.com/Anshieee/i3-mono.git
+cd i3-mono.git
+chmod +x install.sh
+./install.sh
+```
+
 <a id="keybinds"></a>
 ## Keybinds 
 
