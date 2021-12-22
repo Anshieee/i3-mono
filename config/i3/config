@@ -182,7 +182,7 @@ bindsym $mod+r mode "resize"
 
 #Prestarting stuff
 exec_always feh --bg-scale ~/Pictures/wallpapers/momo.jpg       #wallpaper setup with feh
-exec_always picom -b                                            #picom
+exec_always picom -b -c ~/.config/picom.conf                                           #picom
 exec_always flameshot                                           #screenshot utility
 
 
