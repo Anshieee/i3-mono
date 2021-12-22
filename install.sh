@@ -140,7 +140,7 @@ if [[ "$res" == "1" ]]; then
         mkdir ~/.config/conky
         cp -r config/conky/* ~/.config/conky
     fi
-elif [[ $REPLY == "2" ]]; then
+elif [[ $res == "2" ]]; then
         if [ -d ~/.config/polybar ]; then
         echo "polybar config backed up and new config installed"
         mkdir ~/.config/polybar.bak && mv ~/.config/polybar/* ~/.config/polybar.bak/
