@@ -204,6 +204,10 @@ gaps inner 10
 bindsym $mod+space exec --no-startup-id ~/.config/rofi/bin/launcher_text
 bindsym $mod+Tab exec --no-startup-id ~/.config/rofi/bin/launcher_show
 #polybar
-exec_always bash ~/.config/polybar/launch.sh --shades
+exec_always bash ~/.config/polybar/forest/launch.sh
 #keybind for flameshot (screenshot)
 bindsym Print exec --no-startup-id flameshot gui
+#conky
+exec_always conky -c ~/.config/conky/conkyrc
+#dunst
+exec_always dunst
