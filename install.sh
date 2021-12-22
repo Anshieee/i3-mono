@@ -33,11 +33,11 @@ then
         git clone https://aur.archlinux.org/yay.git ~/.anshie-misc/yay
         (cd ~/.anshie-misc/yay/ && makepkg -si )
 fi
-
+yay -S --noconfirm polybar
 
 #important packages
 echo "Installing necessary packages"
-sudo pacman --noconfirm -S rustup cargo alacritty picom rofi flameshot feh pango gdk-pixbuf2 cairo glib2 gcc-libs glibc gtk3
+sudo pacman --noconfirm -S conky alacritty picom rofi flameshot feh
 
 # eww
 # echo "Installing eww"
