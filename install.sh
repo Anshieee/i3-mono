@@ -1,8 +1,12 @@
 echo "Hi."
 sleep 1
 clear
+echo "Thankyou for using my script"
+sleep 2
+clear
 echo "Your mom's hot"
 sleep 0.5
+clear
 
 #Start
 
@@ -103,7 +107,39 @@ if [ -d ~/.config/rofi ]; then
     mkdir ~/.config/rofi.bak && mv ~/.config/rofi/* ~/.config/rofi.bak/
     cp -r config/rofi/* ~/.config/rofi
 else
-    echo "dunst config installed"
-    mkdir ~/.config/dunst
-    cp -r config/dunst/* ~/.config/dunst
+    echo "rofi config installed"
+    mkdir ~/.config/rofi
+    cp -r config/rofi/* ~/.config/rofi
+fi
+
+#Installing polybar config
+clear
+echo "LAST STEP!!!"
+echo "What's your resolution"
+echo "[1] 1366x768"
+echo "[2] 1920x1080"
+read res
+if [[ "$res" == "1" ]]; then
+    if [ -d ~/.config/polybar ]; then
+        echo "polybar config backed up and new config installed"
+        mkdir ~/.config/polybar.bak && mv ~/.config/polybar/* ~/.config/polybar.bak/
+        cp -r config/polybar/forest ~/.config/polybar
+    else
+        echo "polybar config installed"
+        mkdir ~/.config/polybar
+        cp -r config/polybar/forest ~/.config/polybar
+    fi
+elif [[ $REPLY == "2" ]]; then
+        if [ -d ~/.config/polybar ]; then
+        echo "polybar config backed up and new config installed"
+        mkdir ~/.config/polybar.bak && mv ~/.config/polybar/* ~/.config/polybar.bak/
+        cp -r config/polybar/forest-1080p ~/.config/polybar/forest
+    else
+        echo "polybar config installed"
+        mkdir ~/.config/polybar
+        cp -r config/polybar/forest-1080p ~/.config/polybar/forest
+    fi
+else
+    echo -e "\n:/ bro enter a correct option, run the script again, thats your punishment\n"
+    exit 1
 fi
