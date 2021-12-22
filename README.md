@@ -7,6 +7,7 @@
 - [What is this?](#what-is-this)
 - [Packages and features?](#packages-and-features)
 - [PREVIEW OF WHAT YOULL GET!](#preview-of-what-youll-get)
+- [Installation tutorial (arch only)](#install)
 - [Keybinds](#keybinds)
 
 <a id="about"></a>
