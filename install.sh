@@ -1,5 +1,8 @@
 echo "Hi."
-sleep 2
+sleep 1
+clear
+echo "Your mom's hot"
+sleep 0.5
 
 #Start
 
@@ -32,15 +35,15 @@ fi
 echo "Installing necessary packages"
 sudo pacman --noconfirm -S rustup cargo alacritty picom rofi flameshot feh pango gdk-pixbuf2 cairo glib2 gcc-libs glibc gtk3
 
-#eww
-echo "Installing eww"
-git clone https://github.com/elkowar/eww ~/.anshie-misc/
-cd ~/.anshie-misc/eww
-cargo build --release
-cd target/release
-chmod +x ./eww
-cp eww ~/bin/
-cd
+# eww
+# echo "Installing eww"
+# git clone https://github.com/elkowar/eww ~/.anshie-misc/
+# cd ~/.anshie-misc/eww
+# cargo build --release
+# cd target/release
+# chmod +x ./eww
+# cp eww ~/bin/
+# cd
 
 #Installing picom config
 if [ -f ~/.config/picom.conf ]; then
@@ -68,7 +71,7 @@ fi
 if [ -d ~/.config/dunst ]; then
     echo "dunst config backed up and new config installed"
     mkdir ~/.config/dunst.bak && mv ~/.config/dunst/* ~/.config/dunst.bak/
-    cp -r config/dunst/* ~/.config/dunst;
+    cp -r config/dunst/* ~/.config/dunst
 else
     echo "dunst config installed"
     mkdir ~/.config/dunst
@@ -92,4 +95,15 @@ if [ -f ~/.config/i3/config ]; then
 else
     echo "i3 config installed"
     cp config/i3/config ~/.config/i3/config
+fi
+
+#Installing rofi config
+if [ -d ~/.config/rofi ]; then
+    echo "rofi config backed up and new config installed"
+    mkdir ~/.config/rofi.bak && mv ~/.config/rofi/* ~/.config/rofi.bak/
+    cp -r config/rofi/* ~/.config/rofi
+else
+    echo "dunst config installed"
+    mkdir ~/.config/dunst
+    cp -r config/dunst/* ~/.config/dunst
 fi
