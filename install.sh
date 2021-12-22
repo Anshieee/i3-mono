@@ -5,7 +5,7 @@ clear
 echo "Thankyou for using my script"
 sleep 2
 clear
-echo "Your mom's hot"
+echo "You're pretty :)"
 sleep 0.3
 clear
 
@@ -14,7 +14,7 @@ clear
 #making necessary folders
 mkdir -p ~/.local/share/fonts
 mkdir -p ~/.anshie-misc
-mkdir -p ~/bin
+mkdir -p ~/Pictures
 
 #updating the system
 echo "Updating your stuff"
