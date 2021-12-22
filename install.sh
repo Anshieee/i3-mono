@@ -6,6 +6,7 @@ sleep 2
 #making necessary folders
 mkdir -p ~/.local/share/fonts
 mkdir -p ~/.anshie-misc
+mkdir -p ~/bin
 
 #updating the system
 echo "Updating your stuff"
@@ -29,8 +30,17 @@ fi
 
 #important packages
 echo "Installing necessary packages"
-sudo pacman -S alacritty picom rofi flameshot feh
+sudo pacman --noconfirm -S rustup cargo alacritty picom rofi flameshot feh pango gdk-pixbuf2 cairo glib2 gcc-libs glibc gtk3
 
+#eww
+echo "Installing eww"
+git clone https://github.com/elkowar/eww ~/.anshie-misc/
+cd ~/.anshie-misc/eww
+cargo build --release
+cd target/release
+chmod +x ./eww
+cp eww ~/bin/
+cd
 
 #Installing picom config
 if [ -f ~/.config/picom.conf ]; then
