@@ -1,3 +1,4 @@
+clear
 echo "Hi."
 sleep 1
 clear
@@ -5,7 +6,7 @@ echo "Thankyou for using my script"
 sleep 2
 clear
 echo "Your mom's hot"
-sleep 0.5
+sleep 0.3
 clear
 
 #Start
