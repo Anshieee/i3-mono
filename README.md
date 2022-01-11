@@ -79,3 +79,9 @@ Common keybinds. All the keybinds are listen in `~/.config/i3/config`
 | `Mod+ F`              | Toggle fullscreen                        |
 | `Mod+ Shift + Space`  | Toggle tiling/floating                   |
 | `Mod+ Shift + Arrow keys`| Navigate through windows              |
+
+
+
+### Credits:
+- <a href="https://github.com/Axarva/dotfiles-2.0">Axarva</a> for their README.md
+- Gim Boseong, Kim Bom, Kim Jihwan, Shin Dohyun, Ahn Jaeyoon, Yoon Jongha, Yoon Juri, Lee Jinhee, Jeon Soeun. Jeong dawoon, Jeong Jimin, Hyun Yujeong as the artists for the wallpaper I am using. Originally from RM's <a href="https://www.youtube.com/watch?v=Cvb76hBX_Oc">forever rain</a> music video.
