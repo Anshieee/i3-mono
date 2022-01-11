@@ -113,6 +113,17 @@ else
     cp -r config/rofi/* ~/.config/rofi
 fi
 
+#conky
+if [ -d ~/.config/conky ]; then
+    echo "conky config backed up and new config installed"
+    mkdir ~/.config/conky.bak && mv ~/.config/conky/* ~/.config/conky.bak/
+    cp -r config/conky/* ~/.config/conky
+else
+    echo "conky config installed"
+    mkdir ~/.config/conky
+    cp -r config/conky/* ~/.config/conky
+fi
+
 #Installing polybar config
 clear
 echo "LAST STEP!!!"
@@ -129,16 +140,6 @@ if [[ "$res" == "1" ]]; then
         echo "polybar config installed"
         mkdir ~/.config/polybar
         cp -r config/polybar/forest ~/.config/polybar
-    fi
-    #conky
-    if [ -d ~/.config/conky ]; then
-        echo "conky config backed up and new config installed"
-        mkdir ~/.config/conky.bak && mv ~/.config/conky/* ~/.config/conky.bak/
-        cp -r config/conky/* ~/.config/conky
-    else
-        echo "conky config installed"
-        mkdir ~/.config/conky
-        cp -r config/conky/* ~/.config/conky
     fi
 elif [[ $res == "2" ]]; then
         if [ -d ~/.config/polybar ]; then
